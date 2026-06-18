@@ -1,7 +1,7 @@
-# Enterprise Network Design: Accounts & Delivery Departments
+# Enterprise Network Design: Accounts & Sales Departments
 
 ## Objective
-Design a network in Cisco Packet Tracer connecting Accounts and Delivery departments with proper IP addressing and routing.
+Design a network in Cisco Packet Tracer connecting Accounts and Sales departments with proper IP addressing and routing.
 
 ---
 
@@ -24,7 +24,7 @@ Design a network in Cisco Packet Tracer connecting Accounts and Delivery departm
 | Department | Network | Gateway | Range |
 |------------|---------|---------|-------|
 | Accounts | 192.168.40.0/25 | 192.168.40.1 | .1 - .126 |
-| Delivery | 192.168.40.128/25 | 192.168.40.129 | .129 - .254 |
+| Sales | 192.168.40.128/25 | 192.168.40.129 | .129 - .254 |
 
 ---
 
@@ -37,7 +37,7 @@ Design a network in Cisco Packet Tracer connecting Accounts and Delivery departm
 | PC2 | 192.168.40.3 | 192.168.40.1 |
 | Printer1 | 192.168.40.4 | 192.168.40.1 |
 
-### Delivery Department
+### Sales Department
 | Device | IP | Gateway |
 |--------|-------|---------|
 | PC3 | 192.168.40.130 | 192.168.40.129 |
@@ -46,7 +46,7 @@ Design a network in Cisco Packet Tracer connecting Accounts and Delivery departm
 
 ### Router Configuration
 - **FastEthernet 0/0 (Accounts):** 192.168.40.1 / 255.255.255.128
-- **FastEthernet 0/1 (Delivery):** 192.168.40.129 / 255.255.255.128
+- **FastEthernet 0/1 (Sales):** 192.168.40.129 / 255.255.255.128
 
 ---
 
@@ -63,8 +63,8 @@ Design a network in Cisco Packet Tracer connecting Accounts and Delivery departm
 ## Testing
 
 Run ping commands from any PC to verify connectivity:
-- `ping 192.168.40.130` (Accounts to Delivery)
-- `ping 192.168.40.2` (Delivery to Accounts)
+- `ping 192.168.40.130` (Accounts to Sales)
+- `ping 192.168.40.2` (Sales to Accounts)
 
 **Expected Result:** All pings succeed (0% packet loss)
 
