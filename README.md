@@ -71,3 +71,6 @@ Run ping commands from any PC to verify connectivity:
 ---
 
 ## Topology
+
+<img width="1078" height="474" alt="image" src="https://github.com/user-attachments/assets/d1fdc8ab-082d-40f1-96b0-0f534d070aaa" />
+
